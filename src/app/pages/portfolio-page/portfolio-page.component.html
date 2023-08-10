@@ -1,0 +1,12 @@
+
+<div class="section">
+    <div class="title">MY<span class="word">PORTFOLIO</span></div>
+    <div class="bar"></div>
+    <div class="description">Here is some of my work that I've done during the study of front-end development</div>
+    <div class="portfolios">
+        <app-portfolio-card class="portfolio-card" *ngFor="let p of getPortfolios()" [icon]="p.icon" [photo]="p.photo" [title]="p.title" [githubLink]="p.githubLink" [websiteLink]="p.websiteLink"></app-portfolio-card>
+    </div>
+    <div (click)="viewMore()" class="button">View More
+        <span><i class="fa-solid fa-circle-arrow-down icon"></i></span>
+    </div>
+</div>

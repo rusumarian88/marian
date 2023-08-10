@@ -1,0 +1,55 @@
+
+@import "mixins";
+@import "variables";
+
+*{
+    box-sizing: border-box;
+}
+
+*{
+    font-family: 'Outfit',sans-serif;
+}
+
+
+body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color:var(--body-color);
+    --body-color:black;
+    --font-size-name:54px;
+    --font-size-title:64px;
+    --font-size-second-title:36px;
+    --font-size-description: 25px;
+    --width-bar:60%;
+    --photo-profil:35vw;
+    --width-btns:54px;
+    --box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    --primary-color:aliceblue;
+    --secondary-color:blue;
+    --color-white:aliceblue;
+    --color-btns-controls:#a0abb8;
+    --bg-color-btns-controls:#4d4c4c;
+    --bg-color-nav-bar:#18191c;
+    --transition-1:all 0.4s ease-in-out;
+    
+}
+
+@media screen and (max-width:800px) {
+    body{
+        --photo-profil:40vw;
+        --font-size-description:20px;
+    }
+}
+
+
+@media screen and (max-width:$max-width-break-point) {
+    body{
+        --font-size-name:32px;
+        --photo-profil:62vw;
+        --font-size-title:36px;
+        --font-size-second-title:26px;
+        --font-size-description:17px;
+        --width-bar:90%;
+    }
+}

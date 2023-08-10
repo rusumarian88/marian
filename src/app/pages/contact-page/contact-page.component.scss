@@ -1,0 +1,119 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: block;
+}
+
+.section{
+    padding: 100px 24px;
+    transition: var(--transition-1);
+}
+
+.title{
+    font-size:var(--font-size-title);
+    line-height: normal;
+    font-weight: 500;
+    color:var(--primary-color);
+    margin-bottom:32px;
+    text-align: center;
+    &.title .word{
+        color:var(--secondary-color);
+        font-weight: 600;
+        margin-left: 12px;
+    }
+}
+
+.bar{
+    height: 0.5px;
+    background-color: rgba(128, 128, 128, 0.253);
+    width:var(--width-bar);
+    margin: auto;
+}
+
+.description{
+    font-size:var(--font-size-description);
+    line-height:initial;
+    padding:40px 0;
+    padding-right: calc(var(--width-btns) + 12px);
+    color:var(--primary-color);
+    text-align: center;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 0;
+    gap:50px;
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:18px;
+}
+
+.text{
+    font-size:var(--font-size-description);
+    line-height:initial;
+    color:var(--primary-color);
+}
+
+a{
+    font-family: inherit;
+    color: inherit;
+}
+
+.icon{
+    font-size: 32px;
+    margin-right:12px;
+    color:var(--primary-color);
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    padding: 20px;
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size:30px;
+    color:var(--primary-color);
+    background-color:rgba(37, 36, 36, 0.438);
+    text-align: center;
+    padding: 6px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    &:hover{
+        color: black;
+        background-color:var(--secondary-color);
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    .title{
+        margin-bottom: 16px;
+    }
+    .description{
+        padding:18px 0 40px;
+    }
+}
+
+@media screen and (max-width:$max-width-break-point) {
+    .icon{
+        font-size: 20px;
+        margin-right: 20px;
+    }
+}
