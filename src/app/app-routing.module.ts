@@ -7,8 +7,8 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 
 const routes: Routes = [
   {path:"",component:HomePageComponent},
-  {path:"aboutme",component:AboutMePageComponent},
-  {path:"portfolio",component:PortfolioPageComponent},
+  {path:"despre",component:AboutMePageComponent},
+  {path:"portofoliu",component:PortfolioPageComponent},
   {path:"contact",component:ContactPageComponent}
 ];
 
