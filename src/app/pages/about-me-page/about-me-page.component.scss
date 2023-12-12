@@ -97,11 +97,15 @@
     text-align: center;
 }
 
-.study{
+.study, .work{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
     padding-right:calc(var(--width-btns) + 14px);
+    width: 100%;
 }
 
-.study-item{
+.study-item, .work-item{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -111,7 +115,7 @@
     width: 100%;
 }
 
-.icon-study{
+.icon-study, .icon-work{
     display: inline-block;
     width: 52px;
     height: 52px;
@@ -123,7 +127,7 @@
     padding: 11px;
 }
 
-.bar-study{
+.bar-study, .bar-work{
     display: inline-block;
     vertical-align: middle;
     width: 40px;
@@ -132,7 +136,7 @@
     margin: 0 10px;
 }
 
-.period-study{
+.period-study, .period-work{
     display: inline-block;
     font-size: var(--font-size-description);
     padding: 4px 10px;
@@ -149,10 +153,11 @@
     margin: auto;
 }
 
-.info-study{
+.info-study, .info-work{
     font-size: var(--font-size-description);
     line-height: initial;
     text-align: center;
+    margin: auto;
 }
 
 
