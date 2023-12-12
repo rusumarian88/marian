@@ -15,6 +15,12 @@ export class PortfolioService {
   
   portfolios=[
     { 
+      photo:"/assets/fanpriority.png",
+      title:"Portfolio Website",
+      githubLink:"Github",
+      websiteLink:"https://fanpriority.web.app/",
+    },
+    { 
       photo:"/assets/stripe.png",
       title:"Portfolio Website",
       githubLink:"Github",

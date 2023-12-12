@@ -156,8 +156,8 @@
 .info-study, .info-work{
     font-size: var(--font-size-description);
     line-height: initial;
-    text-align: center;
     margin: auto;
+    text-align: center;
 }
 
 
@@ -166,7 +166,7 @@
         padding: 0;
         margin: 16px 0;
     }
-    .study{
+    .study, .work{
         padding: 0;
     }
 }
@@ -193,11 +193,11 @@
     .title-card{
         font-size: 16px;
     }
-    .icon-study{
+    .icon-study, .icon-work{
         width:42px;
         height:42px;
     }
-    .bar-study{
+    .bar-study, .bar-work{
         width: 22px;
         margin: 0 6px;
     }

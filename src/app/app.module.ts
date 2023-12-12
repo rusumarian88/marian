@@ -11,6 +11,7 @@ import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.co
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { PortfolioCardComponent } from './components/portfolio-card/portfolio-card.component';
 import { SkillsCardComponent } from './components/skills-card/skills-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SkillsCardComponent } from './components/skills-card/skills-card.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

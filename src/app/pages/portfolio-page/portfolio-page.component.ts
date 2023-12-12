@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/services/portfolio.service';
-// import {BreakpointObserver,BreakpointState} from '@angular/cdk/layout';
+import {BreakpointObserver,BreakpointState} from '@angular/cdk/layout';
 
 
 @Component({
@@ -13,16 +13,17 @@ export class PortfolioPageComponent implements OnInit {
   nrportfolios=12
 
   constructor(
-    public portfolioService:PortfolioService
+    public portfolioService:PortfolioService,
+    public breakPointObserver:BreakpointObserver
   ) { 
 
-    // BreakpointObserver.observe("(max-width:640px)").subscribe((result:BreakpointState)=>{
-    //   if(result.matches){
-    //     this.nrportfolios=6
-    //   }else{
-    //     this.nrportfolios=this.portfolioService.portfolios.length
-    //   }
-    // })
+    breakPointObserver.observe("(max-width:640px)").subscribe((result:BreakpointState)=>{
+       if(result.matches){
+         this.nrportfolios=6
+       }else{
+         this.nrportfolios=this.portfolioService.portfolios.length
+       }
+     })
     
 
   }
