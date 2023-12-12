@@ -10,7 +10,7 @@ import {BreakpointObserver,BreakpointState} from '@angular/cdk/layout';
 })
 export class PortfolioPageComponent implements OnInit {
 
-  nrportfolios=12
+  nrportfolios=13
 
   constructor(
     public portfolioService:PortfolioService,
