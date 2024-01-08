@@ -15,6 +15,12 @@ export class PortfolioService {
   
   portfolios=[
     { 
+      photo:"/assets/tetracom.png",
+      title:"Portfolio Website",
+      githubLink:"Github",
+      websiteLink:"https://tetracom.ai/",
+    },
+    { 
       photo:"/assets/fanpriority.png",
       title:"Portfolio Website",
       githubLink:"Github",
